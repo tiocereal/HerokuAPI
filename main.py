@@ -2,7 +2,7 @@
 import email
 from flask import *
 import os
-import aminofix
+import samino
 os.system('set FLASK_ENV=development')
 app = Flask(__name__)
 
@@ -13,7 +13,7 @@ def get_timezone():
   email = data.get("email")
   password = data.get("password")
   device = data.get("device")
-  client = aminofix.Client(device)
+  client = samino.Client(deviceId = device)
   client.login(email = email, password = password)
   print(client.sid)
   return f"{client.sid}"
