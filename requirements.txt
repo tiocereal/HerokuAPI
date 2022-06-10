@@ -1,4 +1,4 @@
-amino.fix
+samino
 requests
 flask
 gunicorn
