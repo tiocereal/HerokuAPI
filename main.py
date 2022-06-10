@@ -18,7 +18,7 @@ def get_timezone():
   client.login(email = email, password = password)
   print(client.sid)
   return f"{client.sid}"
-port = random.randint(4000, 9999)
+port = random.randint(2000, 9000)
 if __name__ == '__main__':
   app.run("0.0.0.0", port)
 
